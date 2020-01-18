@@ -146,6 +146,7 @@ ul.socialicons {
 }
 
 .tabs {
+  display: flex;
   height: 117px;
   position: absolute;
   margin-top: -14px;
@@ -168,8 +169,11 @@ ul.socialicons {
   margin-right: 35px;;
 }
 
-a.tab-profile.active {
+li a.active {
   background: url('../img/tab-hover.png') no-repeat;
+}
+
+li a.active {
   color: #CF455C;
 }
 
