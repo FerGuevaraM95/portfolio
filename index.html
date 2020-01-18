@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio</title>
+  <!-- RESET CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
@@ -16,15 +18,15 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <section class="container">
+  <section id="container">
     <header>
       <div id="logo">
         <h1>Fernando Guevara</h1>
-        <p>React Enginer & Frontend Developer</p>
+        <p>Frontend Developer & React Enginer</p>
       </div>
 
-      <div class="socila-icons-container">
-        <span class="social text">
+      <div class="social-icons-container">
+        <span class="socials-text">
           <button class="pulse-button">
             <i class="fa fa-share"></i>
           </button>
@@ -39,17 +41,17 @@
       </div>
     </header>
 
-    <section id="section">
+    <section id="content">
       <div id="profile">
         <div class="about">
-          <div class="photho-inner">
+          <div class="photo-inner">
             <ul>
               <li><img src="./img/photo.jpg" alt=""></li>
-              <li><img src="./img/photo1.png" alt=""></li>
+              <!-- <li><img src="./img/photo1.png" alt=""></li> -->
             </ul>
           </div>
           <h1>Fernando Guevara</h1>
-          <p>React Enginer & Frontend Developer</p>
+          <p>Frontend Developer & React Enginer</p>
           <br>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad eveniet quibusdam, quae dignissimos reprehenderit maxime? Ipsa dolorem fugit molestias libero harum!</p>
         </div>
@@ -69,7 +71,7 @@
       <nav class="menu">
         <ul class="tabs">
           <li>
-            <a href="#" class="tab-profile">
+            <a href="#" class="tab-profile active">
             <i><i class="fa fa-user"></i></i>
             PROFILE
             </a>
