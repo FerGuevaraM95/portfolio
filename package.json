@@ -1,0 +1,43 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.dev.js --mode development",
+    "build:develop": "webpack --config ./webpack.dev.js --mode development",
+    "build:production": "webpack --config ./webpack.config.js --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerGuevaraM95/portfolio.git"
+  },
+  "author": "Fernando Guevara <luisfernandoguevara95@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FerGuevaraM95/portfolio/issues"
+  },
+  "homepage": "https://github.com/FerGuevaraM95/portfolio#readme",
+  "devDependencies": {
+    "@babel/core": "7.6.4",
+    "@babel/preset-env": "7.6.3",
+    "autoprefixer": "9.7.0",
+    "babel-loader": "8.0.6",
+    "clean-webpack-plugin": "3.0.0",
+    "css-loader": "3.2.0",
+    "file-loader": "2.0.0",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "image-webpack-loader": "6.0.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "3.0.0",
+    "pug-html-loader": "1.1.5",
+    "resolve-url-loader": "3.1.0",
+    "sass-loader": "8.0.0",
+    "style-loader": "1.0.0",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.9",
+    "webpack-dev-server": "3.9.0"
+  }
+}
