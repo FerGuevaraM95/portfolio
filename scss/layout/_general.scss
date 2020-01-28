@@ -17,11 +17,11 @@ a {
 }
 
 #content {
-  background-color: #FFF;
+  background-color: $White;
 }
 
 #profile {
-  background-color: #CF455C;
+  background-color: $Salmon;
   background-image: url("../../img/header-shadow.png");
   background-position: center bottom;
   background-repeat: repeat-x;
@@ -44,7 +44,7 @@ a {
 
   h1 {
     font-weight: 900;
-    color: #FFF;
+    color: $White;
     line-height: 34px;
     margin-top: 8px;
     margin-left: -20px;
@@ -52,7 +52,7 @@ a {
     + p {
       margin-top: 5px;
       font-size: 18px;
-      color: #FFF;
+      color: $White;
       line-height: 18px;
       font-family: 'Oswald', sans-serif;
     }
@@ -61,7 +61,7 @@ a {
   p {
     font-size: 14px;
     margin-top: 15px;
-    color: #FFF;
+    color: $White;
     font-weight: 400;
     line-height: 24px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -86,7 +86,7 @@ a {
     width: 293px;
 
     label {
-      color: #FFF;
+      color: $White;
       float: left;
       padding: 4px 7px;
       font-weight: 550;
@@ -100,7 +100,7 @@ a {
       width: 220px;
       padding-top: 4px;
       font-weight: 400;
-      color: #FFF;
+      color: $White;
       font-family: 'Roboto Condensed', sans-serif;
       text-transform: uppercase;
     }
@@ -115,7 +115,7 @@ header {
 span.socials-text {
   position: absolute;
   right: 0;
-  color: #FFF;
+  color: $White;
   padding: 2px 9px;
   font-size: 22px;
   cursor: pointer;
@@ -124,7 +124,7 @@ span.socials-text {
 }
 
 /* i.fa.fa-share {
-  color: #FFF !important;
+  color: $White !important;
 } */
 
 ul.socialicons {
@@ -143,15 +143,15 @@ ul.socialicons {
   line-height: 15px;
   border: none;
   box-shadow: 0 0 0 0 rgb(101, 100, 100);
-  background-color: #CF455C !important;
-  color: #FFF !important;
+  background-color: $Salmon !important;
+  color: $White !important;
   cursor: pointer;
   font-size: 20px;
 }
 
 .menu {
   height: 100px;
-  background-color: #EDEDED;
+  background-color: $Light-Gray;
   position: relative;
   padding-left: 130px;
   padding-right: 130px;
@@ -170,7 +170,7 @@ ul.socialicons {
     display: inline-block;
     background-repeat: no-repeat;
     font-size: 15px;
-    color: #B9B9B9;
+    color: $Accent-Gray;
     text-align: center;
     font-weight: 580;
     text-transform: uppercase;
@@ -183,7 +183,7 @@ ul.socialicons {
 
 li a.active {
   background: url('../../img/tab-hover.png') no-repeat;
-  color: #CF455C;
+  color: $Salmon;
 }
 
 @keyframes bounce {
@@ -205,7 +205,7 @@ a.tab-profile.active i {
 }
 
 /* .tabs li.active a {
-  color: #CF455C;
+  color: $Salmon;
 } */
 
 .tabs li > a > i {
@@ -221,7 +221,7 @@ a.tab-profile.active i {
   display: none;
 
   p {
-    color: #555;
+    color: $Text-Color;
     line-height: 20px;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
@@ -241,34 +241,34 @@ a.tab-profile.active i {
     float: left;
     margin-right: 25px;
     text-align: center;
-    background-color: #FBFBFB;
-    border-bottom: 1px solid #E5E5E5;
+    background-color: $Background-Color;
+    border-bottom: 1px solid $Border-Color;
     height: 185px;
     margin-bottom: 30px;
     width: 180px;
 
     &:hover {
-      border-bottom: 1px solid #CF455C;
+      border-bottom: 1px solid $Salmon;
       height: 185px;
     }
   }
 
   img {
-    background-color: #FFF;
+    background-color: $White;
     height: 120px;
     width: 185px;
   }
 
   li {
     &:hover .title {
-      color: #CF455C;
+      color: $Salmon;
     }
 
     .title {
       font-size: 14px;
       margin-top: 15px;
       font-weight: 400;
-      color: #3A3A3A;
+      color: $Title-Color;
       text-transform: uppercase;
       font-family: 'Roboto Condensed', sans-serif;
     }
@@ -276,21 +276,21 @@ a.tab-profile.active i {
     .categorie {
       font-size: 11px;
       line-height: 25px;
-      color: #999;
+      color: $Gray-900;
     }
   }
 }
 
 .cats-filter {
-  border-bottom: 1px solid #EDEDED;
+  border-bottom: 1px solid $Light-Gray;
   overflow: hidden;
   padding: 15px 0;
 
   li a {
     float: left;
     margin-right: 7px;
-    color: #FFF;
-    background-color: #777;
+    color: $White;
+    background-color: $Gray-700;
     padding: 10px 10px;
     margin-bottom: 5px;
     font-size: 13px;
@@ -303,7 +303,7 @@ a.tab-profile.active i {
     }
 
     &.current {
-      background-color: #CF455C;
+      background-color: $Salmon;
     }
   }
 }
@@ -312,7 +312,7 @@ a.tab-profile.active i {
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: #333 !important;
+  color: $Gray-300 !important;
 }
 
 #contact {
@@ -336,13 +336,13 @@ a.tab-profile.active i {
 
 .contact-info ul {
   float: left;
-  border-left: 1px solid #CF455C;
+  border-left: 1px solid $Salmon;
   padding-left: 18px;
 
   li {
     font-size: 13px;
     line-height: 20px;
-    color: #777;
+    color: $Gray-700;
     overflow: hidden;
     font-family: 'Roboto Condensed', sans-serif;
   }
@@ -356,8 +356,8 @@ a.tab-profile.active i {
   height: 300px;
   margin-bottom: 25px;
   width: 100%;
-  border-bottom: 1px solid #CCC;
-  border-top: 1px solid #CCC;
+  border-bottom: 1px solid $Border-Color;
+  border-top: 1px solid $Border-Color;
 
   iframe {
     width: 100%;
@@ -366,11 +366,11 @@ a.tab-profile.active i {
 
 form {
   .input {
-    box-shadow: inset 0 5px 17px -13px #333;
-    background-color: #FDFDFD;
-    border: 1px solid #CED4DA;
+    box-shadow: inset 0 5px 17px -13px $Gray-300;
+    background-color: $Input-Color;
+    border: 1px solid $Border-Input;
     border-radius: 2px;
-    color: #777;
+    color: $Gray-700;
     font-size: 12px;
     height: 30px;
     outline: none;
@@ -380,11 +380,11 @@ form {
   }
 
   textarea {
-    box-shadow: inset 0 5px 17px -13px #333;
-    background-color: #FDFDFD;
-    border: 1px solid #CED4DA;
+    box-shadow: inset 0 5px 17px -13px $Gray-300;
+    background-color: $Input-Color;
+    border: 1px solid $Border-Input;
     border-radius: 2px;
-    color: #777;
+    color: $Gray-700;
     font-size: 12px;
     height: 30px;
     outline: none;
@@ -399,15 +399,15 @@ form {
 
   label {
     display: block;
-    color: #999;
+    color: $Gray-900;
     margin-bottom: 8px;
     font-size: 13px;
   }
 }
 
 .button {
-  color: #FFF;
-  background-color: #CF455C;
+  color: $White;
+  background-color: $Salmon;
   padding: 8px;
   border: none;
   border-radius: 3px;
@@ -419,7 +419,7 @@ footer {
   margin: 20px 0;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
-  color: #777;
+  color: $Gray-700;
 }
 
 header {
@@ -435,7 +435,7 @@ button:focus {
 span.socials-text {
   position: absolute;
   right: 0px;
-  color: #fff;
+  color: $White;
   padding: 2px 9px;
   font-size: 22px;
   cursor: pointer;
@@ -446,7 +446,7 @@ span.socials-text {
 }
 
 i.fa.fa-share-alt-square {
-  color: #fff !important;
+  color: $White !important;
 }
 
 ul.socialicons {
@@ -471,9 +471,9 @@ ul.socialicons {
   line-height: 15px;
   border: none;
   box-shadow: 0 0 0 0 rgb(101, 100, 100);
-  background-color: #fff;
+  background-color: $White;
   cursor: pointer;
-  color: #cf455c;
+  color: $Salmon;
   font-size: 20px;
 }
 
@@ -528,7 +528,7 @@ h1 h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif !important;
 
     span {
-      color: #cf455c;
+      color: $Salmon;
       float: left;
       width: 100%;
       margin-top: -11px;
@@ -549,8 +549,8 @@ h1 h2, h3, h4, h5, h6 {
     padding: 7px 16px;
     margin: 10px 0px 20px;
     border-radius: 50px;
-    color: #fff;
-    background-color: #cf455c;
+    color: $White;
+    background-color: $Salmon;
   }
 
   p {
@@ -570,7 +570,7 @@ h1 h2, h3, h4, h5, h6 {
 }
 
 .text-color {
-  color: #cf455c;
+  color: $Salmon;
 }
 
 /* .right-skills:after,.right-skills:before { */
@@ -578,7 +578,7 @@ h1 h2, h3, h4, h5, h6 {
 /* position: absolute; */
 /* width: 101px; */
 /* height: 54px; */
-/* background: #edde45; */
+/* background: $Yellow; */
 /* left: -160px; */
 /* } */
 
@@ -599,8 +599,8 @@ h1 h2, h3, h4, h5, h6 {
 }
 
 .ex-heading h2 {
-  background: #cf455c;
-  color: #fff;
+  background: $Salmon;
+  color: $White;
   font-weight: 600;
   letter-spacing: 5px;
   padding: 6px 27px;
@@ -609,8 +609,8 @@ h1 h2, h3, h4, h5, h6 {
 
 .ex-box {
   h2 {
-    background: #cf455c;
-    color: #fff;
+    background: $Salmon;
+    color: $White;
     font-size: 17px;
     line-height: 17px;
     display: inline-block;
@@ -655,11 +655,11 @@ h1 h2, h3, h4, h5, h6 {
   float: right;
   padding: 0px 36px;
   position: relative;
-  border-left: 0px solid #cf455c;
+  border-left: 0px solid $Salmon;
 }
 
 .heading-skills h3 {
-  color: #fff;
+  color: $White;
   font-size: 21px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -669,7 +669,7 @@ h1 h2, h3, h4, h5, h6 {
 }
 
 .right-skills h4 {
-  color: #fff;
+  color: $White;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -683,12 +683,12 @@ h1 h2, h3, h4, h5, h6 {
 
 .intetst-box i.fa {
   font-size: 36px;
-  color: #fff;
+  color: $White;
   text-align: center;
 }
 
 .intetst-icons {
-  color: #fff;
+  color: $White;
   text-align: center;
   margin-bottom: 19px;
   margin-left: -33px;
@@ -698,7 +698,7 @@ h1 h2, h3, h4, h5, h6 {
     letter-spacing: 2px;
     font-weight: normal;
     text-transform: uppercase;
-    color: white;
+    color: $White;
   }
 }
 
@@ -717,20 +717,20 @@ h1 h2, h3, h4, h5, h6 {
 
   .ex-box {
     h4 {
-      color: #fff;
+      color: $White;
       letter-spacing: 2px;
       font-weight: 400;
     }
 
     p {
-      color: #fff;
+      color: $White;
       font-weight: 400;
     }
   }
 }
 
 .qr-box {
-  background: #cf455c;
+  background: $Salmon;
   padding: 20px;
 }
 
@@ -768,7 +768,7 @@ h1 h2, h3, h4, h5, h6 {
 
 .address-right-box i.fa {
   margin-right: 15px;
-  color: #cf455c;
+  color: $Salmon;
   font-size: 20px;
 }
 
@@ -781,17 +781,17 @@ h1 h2, h3, h4, h5, h6 {
   display: inline-block;
   width: 7px;
   height: 7px;
-  background: #fff;
+  background: $White;
   border-radius: 50%;
 }
 
 .sn {
-  color: #fff;
+  color: $White;
   font-size: 28px;
   font-weight: 700;
   width: 68px;
   height: 68px;
-  border: 5px solid #cf455c;
+  border: 5px solid $Salmon;
   border-radius: 50%;
   text-align: center;
   padding-top: 8px;
@@ -815,7 +815,7 @@ h1 h2, h3, h4, h5, h6 {
 }
 
 .bg-warning {
-  background-color: #cf455c !important;
+  background-color: $Salmon !important;
 }
 
 button.setting-icon {
@@ -823,9 +823,9 @@ button.setting-icon {
   width: 30px;
   position: relative;
   top: 2px;
-  background: #cf455c;
-  color: #fff;
-  border: 2px solid #fff;
+  background: $Salmon;
+  color: $White;
+  border: 2px solid $White;
 }
 
 .color-box {
@@ -852,23 +852,23 @@ button.setting-icon {
 
 button {
   &#yellow-color {
-    background: #edde45;
-    border: 2px solid white;
+    background: $Yellow;
+    border: 2px solid $White;
   }
 
   &#red-color {
-    background: #cf455c;
-    border: 2px solid white;
+    background: $Salmon;
+    border: 2px solid $White;
   }
 
   &#blue-color {
-    background: blue;
-    border: 2px solid white;
+    background: $Blue;
+    border: 2px solid $White;
   }
 
   &#green-color {
-    background: green;
-    border: 2px solid white;
+    background: $Green;
+    border: 2px solid $White;
   }
 }
 
@@ -882,48 +882,48 @@ button {
 
 #yellow {
   .left-name h2 span {
-    color: #edde45;
+    color: $Yellow;
   }
 
   .bg-warning {
-    background-color: #edde45 !important;
+    background-color: $Yellow !important;
   }
 
   .sn {
-    border: 5px solid #edde45;
+    border: 5px solid $Yellow;
   }
 
   .address-right-box i.fa {
-    color: #edde45;
+    color: $Yellow;
   }
 
   .qr-box {
-    background: #edde45;
+    background: $Yellow;
   }
 
   .ex-box h2, .ex-heading h2 {
-    background: #edde45;
+    background: $Yellow;
     color: #383838;
   }
 
   .right-skills {
     &:after, &:before {
-      background: #edde45;
+      background: $Yellow;
     }
   }
 
   .text-color {
-    color: #edde45;
+    color: $Yellow;
   }
 
   .left-name {
     h2 span {
-      color: #edde45;
+      color: $Yellow;
     }
 
     &.bg-color-1 h5 {
-      color: #fff;
-      background-color: #edde45;
+      color: $White;
+      background-color: $Yellow;
     }
   }
 }
@@ -933,136 +933,136 @@ button {
 
 #red {
   .left-name h2 span {
-    color: #cf455c;
+    color: $Salmon;
   }
 
   .bg-warning {
-    background-color: #cf455c !important;
+    background-color: $Salmon !important;
   }
 
   .sn {
-    border: 5px solid #cf455c;
+    border: 5px solid $Salmon;
   }
 
   .address-right-box i.fa {
-    color: #cf455c;
+    color: $Salmon;
   }
 
   .qr-box {
-    background: #cf455c;
+    background: $Salmon;
   }
 
   .ex-box h2 {
-    background: #cf455c;
+    background: $Salmon;
     color: #fdf9f9;
   }
 
   .ex-heading h2 {
-    background: #cf455c;
+    background: $Salmon;
     color: #f9f9f9;
   }
 
   .text-color {
-    color: #cf455c;
+    color: $Salmon;
   }
 
   .left-name {
     h2 span {
-      color: #cf455c;
+      color: $Salmon;
     }
 
     &.bg-color-1 h5 {
-      color: #fff;
-      background-color: #cf455c;
+      color: $White;
+      background-color: $Salmon;
     }
   }
 }
 
 /* red color */
-/* blue blue */
+/* blue $Blue */
 
 #blue {
   .left-name h2 span {
-    color: #cf455c;
+    color: $Salmon;
   }
 
   .bg-warning {
-    background-color: blue !important;
+    background-color: $Blue !important;
   }
 
   .sn {
-    border: 5px solid blue;
+    border: 5px solid $Blue;
   }
 
   .address-right-box i.fa {
-    color: blue;
+    color: $Blue;
   }
 
   .qr-box {
-    background: blue;
+    background: $Blue;
   }
 
   .ex-box h2, .ex-heading h2 {
-    background: blue;
-    color: #fff;
+    background: $Blue;
+    color: $White;
   }
 
   .text-color {
-    color: blue;
+    color: $Blue;
   }
 
   .left-name {
     h2 span {
-      color: blue;
+      color: $Blue;
     }
 
     &.bg-color-1 h5 {
-      color: #fff;
-      background-color: blue;
+      color: $White;
+      background-color: $Blue;
     }
   }
 }
 
-/* blue color */
-/* green blue */
+/* Blue color */
+/* $Green $Blue */
 
 #green {
   .left-name h2 span {
-    color: green;
+    color: $Green;
   }
 
   .bg-warning {
-    background-color: green !important;
+    background-color: $Green !important;
   }
 
   .sn {
-    border: 5px solid green;
+    border: 5px solid $Green;
   }
 
   .address-right-box i.fa {
-    color: green;
+    color: $Green;
   }
 
   .qr-box {
-    background: green;
+    background: $Green;
   }
 
   .ex-box h2, .ex-heading h2 {
-    background: green;
-    color: #fff;
+    background: $Green;
+    color: $White;
   }
 
   .text-color, &.left-name h2 span {
-    color: green;
+    color: $Green;
   }
 
   .left-name.bg-color-1 h5 {
-    color: #fff;
-    background-color: green;
+    color: $White;
+    background-color: $Green;
   }
 }
 
-/* green color */
+/* $Green color */
 
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -1136,9 +1136,9 @@ button {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: $White;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid $Border-Input;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -1169,7 +1169,7 @@ button {
   }
 
   &:focus {
-    border-color: #cf455c;
+    border-color: $Salmon;
     box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
   }
 }
