@@ -1,3 +1,68 @@
 //====================================
 // Menu
 //====================================
+.menu {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  background-color: $Light-Gray;
+  position: relative;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+.tabs {
+  display: flex;
+  height: 117px;
+  position: absolute;
+  margin-top: -14px;
+  z-index: 100;
+
+  li > a {
+    padding-top: 28px;
+    width: 115px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    color: $Accent-Gray;
+    text-align: center;
+    font-weight: 580;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 35px;
+    text-decoration: none;
+    margin-right: 35px;
+  }
+}
+
+li a.active {
+  background: url('../../img/tab-hover.png') no-repeat;
+  color: $Salmon;
+}
+
+a.tab-profile.active i {
+  animation: bounce 2s infinite;
+}
+
+/* .tabs li.active a {
+  color: $Salmon;
+} */
+
+.tabs li > a > i {
+  font-size: 45px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+@media only screen and (min-width: 860px) {
+  .menu {
+    height: 100px;
+    background-color: $Light-Gray;
+    position: relative;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
