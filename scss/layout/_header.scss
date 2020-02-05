@@ -1,0 +1,67 @@
+//====================================
+// Header
+//====================================
+.header {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  overflow: hidden;
+  margin-left: 10px;
+  display: none;
+
+  &__title {
+    margin-bottom: 3px;
+    font-size: 2rem;
+    font-weight: 900;
+    color: $Text-Color;
+  }
+
+  &__subtitle {
+    color: $Text-Color;
+    line-height: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin-left: 7px;
+  }
+}
+
+.socials-text {
+  position: absolute;
+  right: 0;
+  color: $White;
+  padding: 2px 9px;
+  font-size: 22px;
+  cursor: pointer;
+  top: 10px;
+  border-radius: 70px;
+}
+
+/* i.fa.fa-share {
+  color: $White !important;
+} */
+
+.social-icons {
+  opacity: 0;
+  top: -1;
+  position: relative;
+  transition: all ease 1s;
+  z-index: -1;
+  left: -7px;
+}
+
+.pulse-button {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  line-height: 15px;
+  border: none;
+  box-shadow: 0 0 0 0 rgb(101, 100, 100);
+  background-color: $Salmon !important;
+  color: $White !important;
+  cursor: pointer;
+  font-size: 20px;
+}

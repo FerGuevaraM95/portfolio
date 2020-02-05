@@ -1,0 +1,150 @@
+//====================================
+// Profile
+//====================================
+.profile {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "photo"
+    "about"
+    "info";
+  padding: 0 1rem;
+  background-color: $Salmon;
+  background-image: url("../../img/header-shadow.png");
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  overflow: hidden;
+}
+
+.photo-inner {
+  grid-area: photo;
+  position: relative;
+  width: auto;
+  // float: left;
+  // width: 214px;
+  // height: 214px;
+  margin: 20px auto;
+  padding: 12px 0 0 19px;
+  padding: 0 auto;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 192px;
+    height: 212px;
+    background: url("../../img/photo-inner.png") no-repeat center center;
+  }
+}
+
+.about {
+  grid-area: about;
+  margin: 5px 0;
+  // float: left;
+  // margin-top: 30px;
+  // width: 490px;
+  // margin-left: 20px;
+
+  &__title {
+    margin: 0 0 8px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: $White;
+    text-align: center;
+    line-height: 34px;
+    text-transform: uppercase;
+    // margin-left: -20px;
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: $White;
+    line-height: 18px;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  &__text {
+    font-size: 14px;
+    margin-top: 18px;
+    color: $White;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+}
+
+.personal-info {
+  // float: left;
+  grid-area: info;
+  position: relative;
+  margin-top: 20px;
+  // width: 310px;
+  min-height: 230px;
+  // margin-left: 10px;
+  // padding: 20px 0 19px 20px;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: -18px;
+    left: -14px;
+    width: 10px;
+    height: 226px;
+    background: url('../../img/personal-info-sep.png') no-repeat left top;
+  }
+
+  &__item {
+    margin-bottom: 14px;
+    line-height: 12px;
+    font-size: 14px;
+    overflow: hidden;
+    // float: left;
+    // width: 293px;
+
+
+  }
+  &__label {
+    color: $White;
+    // float: left;
+    display: inline-block;
+    min-width: 72px;
+    padding: 4px 7px;
+    font-weight: 550;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+  }
+  &__text {
+      // float: right;
+      width: 200px;
+      padding-top: 4px;
+      font-weight: 400;
+      color: $White;
+      font-size: 12px;
+      font-family: 'Roboto Condensed', sans-serif;
+      text-transform: uppercase;
+      line-height: 6px;;
+    }
+}
+
+@media (min-width: 860px) {
+  .profile {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 100%;
+    grid-template-areas:
+      "photo about info";
+    grid-gap: 40px; 
+    padding: 30px 20px; 
+  }
+  .about__text {
+    margin-top: 35px;
+  }
+}

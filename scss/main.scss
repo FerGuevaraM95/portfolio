@@ -12,14 +12,14 @@
 //====================================
 @import "layout/reset";
 @import "layout/general";
+@import "layout/header";
 @import "layout/menu";
-// @import "layout/header";
 // @import "layout/footer";
 
 //====================================
 // Seccion Home
 //====================================
-// @import "components/...";
+@import "components/profile";
 
 //====================================
 // Other Seccion

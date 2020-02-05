@@ -14,16 +14,16 @@ head
   //- BOOTSTRAP
   //- link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css')
 
-section#container
-  header
-    #logo
-      h1 Fernando Guevara
-      p Frontend Developer &amp; React Enginer
+section.container
+  header.header
+    .logo
+      h1.logo__title Fernando Guevara
+      p.logo__subtitle Frontend Developer &amp; React Enginer
     .social-icons-container
       span.socials-text
         button.pulse-button
           i.fa.fa-share
-      ul.socialicons
+      ul.social-icons
         li
           a(href='#')
             i.fa.fa-facebook
@@ -36,39 +36,41 @@ section#container
         li
           a(href='#')
             i.fa.fa-whatsapp
-  section#content
-    #profile
+  section.content
+
+
+    #profile.profile
+      .photo-inner
+        img(src='../img/photo.jpg' alt='')
+
       .about
-        .photo-inner
-          ul
-            li
-              img(src='../img/photo.jpg' alt='')
-            //- <li><img src="../img/photo1.png" alt=""></li>
-        h1 Fernando Guevara
-        p Frontend Developer &amp; React Enginer
-        br
-        p
-          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad eveniet quibusdam, quae dignissimos reprehenderit maxime? Ipsa dolorem fugit molestias libero harum!
+        h1.about__title Fernando Guevara
+        p.about__subtitle Frontend Developer
+        p.about__text
+          | Passionate developer of the Frontend and the technologies that revolutionize our daily environment. Proactive enthusiast, with inexhaustible desire to gain more knowledge day by day, and not give up on the road.
+        //- p.about__text
+        //-   | Lover of the challenges with a culture focused on teamwork, with excellent integration to them with leadership skills and adaptability to various work environments. With interests beyond code and programming.
+    
       ul.personal-info
-        li
-          label(for='') Name
-          span Fernando Guevara
-        li
-          label(for='') Birthday
-          span July 1, 1995
-        li
-          label(for='') Adress
-          span Mexico City
-        li
-          label(for='') Email
-          span luisfernandoguevara95@gmail.com
-        li
-          label(for='') Phone
-          span (+52) 5612820700
-        li
-          label(for='') Website
-          span ferguevaram95.github.io
-    nav.menu
+        li.personal-info__item
+          label.personal-info__label(for='') Name
+          span.personal-info__text Fernando Guevara
+        li.personal-info__item
+          label.personal-info__label(for='') Birthday
+          span.personal-info__text July 1, 1995
+        li.personal-info__item
+          label.personal-info__label(for='') Adress
+          span.personal-info__text Mexico City
+        li.personal-info__item
+          label.personal-info__label(for='') Email
+          span.personal-info__text luisfernandoguevara95@gmail.com
+        li.personal-info__item
+          label.personal-info__label(for='') Phone
+          span.personal-info__text (+52) 5612820700
+        li.personal-info__item
+          label.personal-info__label(for='') Website
+          span.personal-info__text ferguevaram95.github.io
+    //- nav.menu
       ul.tabs
         li.tmenu
           a.tab-profile.active(href='#profile')
@@ -90,7 +92,7 @@ section#container
             i
               i.fa.fa-telegram
             |               CONTACT
-    section#resume
+    //- section#resume
       .timeline-section
         .main-wrapper-resume
           //- carttitle-wrapper start
@@ -304,7 +306,7 @@ section#container
                               i.fa.fa-map-marker(aria-hidden='true')
                               p Dermis India J-219, Saket New Delhi -110017.
     //- Resume
-    section#portfolio
+    //- section#portfolio
       ul#portfolio-filter.cats-filter
         li
           a.current.trnasition(href='#' data-filter='*') All
@@ -360,7 +362,7 @@ section#container
           img(src='../img/8-thumb.jpg' alt='')
           p Revolution
           span.categorie Illustration
-    section#contact
+    //- section#contact
       #map
         iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120336.90383122452!2d-99.18399778610778!3d19.518922121444437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce00316a29ba95%3A0xf1277698ca624191!2sGustavo%20A.%20Madero%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1579982749725!5m2!1ses-419!2smx' width='300' height='100%' frameborder='0' style='border:0;' allowfullscreen='')
       .contact-info
