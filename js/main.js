@@ -11,11 +11,11 @@ jQuery(document).ready(function () {
     $logo.show();
   }
   // Show logo 
-  $('.menu .tabs a').click(function () {
+  $('.menu .tab a').click(function () {
     $logo.fadeIn('slow');
   });
   // Hide logo
-  $('.tab-profile').click(function () {
+  $('.tab__ancle').click(function () {
     $logo.fadeOut('slow');
   });
 
@@ -107,13 +107,13 @@ jQuery(document).ready(function () {
     transitionIn: 'slideDown',
     transitionOut: 'slideUp',
     animationSpeed: 600,
-    tabs: ".tmenu",
+    tabs: ".tab__item",
     tabActiveClass: 'active',
   });
 
 
   // Hover menu effect
-  $content.find('.tabs li a').hover(
+  $content.find('.tab li a').hover(
     function () {
       $(this).stop().animate({ marginTop: "-7px" }, 200);
     }, function () {
@@ -122,7 +122,7 @@ jQuery(document).ready(function () {
   );
 
   // Menu Navigation
-  $(".menu .tabs").carouFredSel({
+  $(".menu .tab").carouFredSel({
     responsive: true,
     direction: "left",
     circular: false,
@@ -148,10 +148,13 @@ jQuery(document).ready(function () {
     items: {
       width: 140,
       visible: {
-        min: 2,
-        max: 5
+        min: 4,
+        max: 4
       }
-    }
+    },
+    // wrapper: {
+    //   classname: "prueba"
+    // }
   });
   /* ---------------------------------------------------------------------- */
 	/*	Cats Filter

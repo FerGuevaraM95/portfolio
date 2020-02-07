@@ -9,20 +9,17 @@
   height: 100px;
   background-color: $Light-Gray;
   position: relative;
-  padding-left: 130px;
-  padding-right: 130px;
 }
 
-.tabs {
+.tab {
   display: flex;
   height: 117px;
   position: absolute;
   margin-top: -14px;
   z-index: 100;
-
-  li > a {
+  &__ancle {
     padding-top: 28px;
-    width: 115px;
+    width: 88px;
     display: inline-block;
     background-repeat: no-repeat;
     font-size: 15px;
@@ -34,26 +31,19 @@
     line-height: 35px;
     text-decoration: none;
     margin-right: 35px;
+    &.active {
+      background: url('../../img/tab-hover.png') no-repeat;
+      color: $Salmon;
+      & i {
+        animation: bounce 2s infinite;
+      }
+    }
   }
-}
-
-li a.active {
-  background: url('../../img/tab-hover.png') no-repeat;
-  color: $Salmon;
-}
-
-a.tab-profile.active i {
-  animation: bounce 2s infinite;
-}
-
-/* .tabs li.active a {
-  color: $Salmon;
-} */
-
-.tabs li > a > i {
-  font-size: 45px;
-  display: block;
-  margin-bottom: 5px;
+  &__icon {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 5px;
+  }
 }
 
 
@@ -62,7 +52,8 @@ a.tab-profile.active i {
     height: 100px;
     background-color: $Light-Gray;
     position: relative;
-    padding-left: 130px;
-    padding-right: 130px;
+  }
+  .tab__ancle {
+    width: 115px;
   }
 }
