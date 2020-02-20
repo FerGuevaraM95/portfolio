@@ -1,0 +1,32 @@
+//====================================
+// Color Box
+//====================================
+.color-box {
+  position: absolute;
+  top: 36px;
+  right: 60px;
+  transition: all ease 1s;
+  // top: 173px;
+  // top: 68px;
+  z-index: 99;
+
+  .btn-style {
+    opacity: 0;
+  }
+
+  &.main {
+    margin-left: -44px;
+    .btn-style {
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .color-box {
+    width: 31px;
+    left: 0;
+    margin-left: -55px;
+  }
+
+}

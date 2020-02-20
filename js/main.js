@@ -20,20 +20,20 @@ jQuery(document).ready(function () {
   });
 
   $('#yellow-color').click(function(e){
-    $(".main-wrapper-resume").attr("id", "yellow");
+    $(".container").attr("id", "yellow");
   });
   
   $('#red-color').click(function (e) {
-    $(".main-wrapper-resume").attr("id", "red");
+    $(".container").attr("id", "red");
   });
 
   $('#blue-color').click(function (e) {
-    $(".main-wrapper-resume").attr("id", "blue");
+    $(".container").attr("id", "blue");
   });
 
   $('#green-color').click(function (e) {
     console.log('press green');
-    $(".main-wrapper-resume").attr("id", "green");
+    $(".container").attr("id", "green");
   });
 
   $(".setting-icon").click(function() {
