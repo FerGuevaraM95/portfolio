@@ -204,7 +204,7 @@ h1 h2, h3, h4, h5, h6 {
 
 
 
-/* .right-skills:after,.right-skills:before { */
+/* .skills:after,.skills:before { */
 /* content: ""; */
 /* position: absolute; */
 /* width: 101px; */
@@ -213,59 +213,118 @@ h1 h2, h3, h4, h5, h6 {
 /* left: -160px; */
 /* } */
 
+// .top-skills {
+//   display: flex;
+//   text-align: center;
+//   margin: 0 auto;
+//   width: 473px;
+//   max-width: 100%;
+// }
+
+.top-skills {
+  display: flex;
+  justify-content: space-around;
+  // text-align: center;
+  // padding: 40px;
+}
 
 
-.right-skills {
+.skill-name {
+  padding: 30px 0;
+  &__icon {
+    color: $White;
+    font-size: 35px;
+    width: 56px;
+    height: 50px;
+    border: 5px solid $Salmon;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    line-height: 40px !important;
+  }
+  & ul {
+    text-align: center;
+    margin: 2px 0;
+    & li {
+      list-style: none;
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin: 2px;
+      background: $White;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+
+
+
+
+.skills {
+  // width: 430px;
+  // float: right;
+  padding: 0px 36px 20px;
+  // position: relative;
+  // border-left: 0px solid $Salmon;
   &:after {
     bottom: 0px;
   }
-
   &:before {
     top: 0px;
   }
+  &__title {
+    color: $White;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding-bottom: 3px;
+    margin-left: -10px;
+  }
+  &__group {
+    margin-top: 30px;
+  }
 }
 
-.top-skills {
-  text-align: center;
-  padding: 40px;
+
+
+.heading-skills {
+  &__title {
+    color: $White;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-left: -10px;
+ }
 }
 
-.progress {
-  height: 8px;
-  margin-top: 10px;
-  margin-left: -20px;
-}
-
-.right-skills {
-  width: 430px;
-  float: right;
-  padding: 0px 36px;
-  position: relative;
-  border-left: 0px solid $Salmon;
-}
-
-.heading-skills h3 {
-  color: $White;
-  font-size: 21px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-  padding-bottom: 14px;
-  margin-left: -28px;
-}
-
-.right-skills h4 {
+.skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  &__title {
   color: $White;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 22px;
   margin-left: -22px;
+  }
+
+  &__star {
+    display: inline-block;
+    color: $White;
+    font-size: 18px;
+    margin-left: 10px;
+  }
 }
 
-.mt-25 {
-  margin-top: 25px;
-}
+
 
 .intetst-box i.fa {
   font-size: 36px;
@@ -362,38 +421,6 @@ h1 h2, h3, h4, h5, h6 {
   padding-bottom: 30px;
 }
 
-.skill-name ul li {
-  list-style: none;
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  background: $White;
-  border-radius: 50%;
-}
-
-.sn {
-  color: $White;
-  font-size: 28px;
-  font-weight: 700;
-  width: 68px;
-  height: 68px;
-  border: 5px solid $Salmon;
-  border-radius: 50%;
-  text-align: center;
-  padding-top: 8px;
-}
-
-.top-skills {
-  display: flex;
-  text-align: center;
-  margin: 0 auto;
-  width: 473px;
-  max-width: 100%;
-}
-
-.skill-name {
-  margin-right: 22px;
-}
 
 
 
@@ -469,7 +496,7 @@ button {
     color: #383838;
   }
 
-  .right-skills {
+  .skills {
     &:after, &:before {
       background: $Yellow;
     }
