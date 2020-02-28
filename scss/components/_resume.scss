@@ -324,28 +324,45 @@ h1 h2, h3, h4, h5, h6 {
   }
 }
 
-
-
-.intetst-box i.fa {
-  font-size: 36px;
-  color: $White;
-  text-align: center;
+.interests {
+  padding: 0px 36px 20px;
+  &__title {
+    color: $White;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-left: -10px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
-.intetst-icons {
-  color: $White;
+.interest-box {
+  margin: 15px 8px;
   text-align: center;
-  margin-bottom: 19px;
-  margin-left: -33px;
-
-  h5 {
+  &__title{
+    margin: 8px 0;
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: normal;
     text-transform: uppercase;
     color: $White;
+    font-family: "Oswald", sans-serif;
+  }
+  &__icon{
+    font-size: 36px;
+    color: $White;
+    text-align: center;
   }
 }
+
+
+
 
 .eduction-right {
   display: inline-block;
