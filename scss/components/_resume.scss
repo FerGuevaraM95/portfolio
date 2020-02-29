@@ -2,6 +2,19 @@
 // Resume
 //====================================
 .resume {
+  grid-template-columns: 1;
+  grid-template-rows: 100%;
+  grid-template-areas:
+    "name"
+    "address"
+    "experience"
+    "top-skills"
+    "skills"
+    "interests"
+    "education"
+    "address-qr";
+  // grid-gap: 40px; 
+  // padding: 30px 20px; 
 
 }
 
@@ -364,61 +377,123 @@ h1 h2, h3, h4, h5, h6 {
 
 
 
-.eduction-right {
-  display: inline-block;
-  padding: 35px 35px 35px 35px;
+.education {
+  padding-bottom: 30px;;
   margin-left: 34px;
-
-  .ex-box {
-    padding: 27px 27px 0px 0px;
+  &__title {
+    color: $White;
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-left: -10px;
   }
+}
 
-  h3 {
-    padding-bottom: 0px;
+.education-box {
+  padding: 20px 27px 0px 0px;
+  &__date {
+    background: #CF455C;
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 17px;
+    display: inline-block;
+    padding: 5px 21px;
+    font-weight: 600 !important;
+    border-radius: 50px;
+    letter-spacing: 1px;
   }
-
-  .ex-box {
-    h4 {
-      color: $White;
-      letter-spacing: 2px;
-      font-weight: 400;
-    }
-
-    p {
-      color: $White;
-      font-weight: 400;
-    }
+  &__title {
+    font-size: 17px;
+    font-weight: 700;
+    padding: 15px 0px 10px;
+    color: $White;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
   }
+  &__text {
+    font-size: 13px;
+    font-weight: 600;
+    color: $White;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+
+
+
+.address-qr {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 35px 35px 20px 35px;
 }
 
 .qr-box {
-  background: $Salmon;
-  padding: 20px;
-}
-
-.address-right-box ul li {
-  list-style: none;
   display: flex;
-  list-style: none;
-  display: flex;
-  color: #908e8e;
-  margin-bottom: 21px;
-  font-size: 13px;
-  font-weight: 600;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  &__image {
+    background: $Salmon;
+    width: 180px;
+    // max-width: 100%;
+    min-width: 100px;
+  }
+  &__link {
+    margin-top: 15px;
+    color: $White;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
-.address-qr-right {
-  padding: 35px 35px 0px 35px;
+.address-box {
+  padding:20px 30px 20px 20px;
+  &__item {
+    list-style: none;
+    display: flex;
+    list-style: none;
+    display: flex;
+    color: #908e8e;
+    margin-bottom: 21px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  &__text {
+    line-height: 18px;
+  }
 }
 
-.address-right-box {
-  padding: 0px 30px;
+
+@media only screen and (min-width: 480px) {
+  .address-qr {
+    flex-direction: row;
+  }
 }
 
-.qr-box img {
-  width: 169px;
-  max-width: 100%;
+@media only screen and (min-width: 860px) {
+  .resume {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 100%;
+    grid-template-areas:
+      "name top-skills"
+      "name skills"
+      "address interests"
+      "experience education"
+      "experience address-qr";
+    // grid-gap: 40px; 
+    // padding: 30px 20px; 
+  }
 }
+
+
+
+
 
 .carttitle-wrapper {
   width: 1140px;
@@ -428,7 +503,7 @@ h1 h2, h3, h4, h5, h6 {
   background: #000;
 }
 
-.address-right-box i.fa {
+.address-box i.fa {
   margin-right: 15px;
   color: $Salmon;
   font-size: 20px;
@@ -500,7 +575,7 @@ button {
     border: 5px solid $Yellow;
   }
 
-  .address-right-box i.fa {
+  .address-box i.fa {
     color: $Yellow;
   }
 
@@ -551,7 +626,7 @@ button {
     border: 5px solid $Salmon;
   }
 
-  .address-right-box i.fa {
+  .address-box i.fa {
     color: $Salmon;
   }
 
@@ -601,7 +676,7 @@ button {
     border: 5px solid $Blue;
   }
 
-  .address-right-box i.fa {
+  .address-box i.fa {
     color: $Blue;
   }
 
@@ -646,7 +721,7 @@ button {
     border: 5px solid $Green;
   }
 
-  .address-right-box i.fa {
+  .address-box i.fa {
     color: $Green;
   }
 

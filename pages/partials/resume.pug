@@ -6,7 +6,7 @@ section.resume#profile
   
     .container
 
-      .name-section
+      section.name-section
         h1.name-section__title Fernando
           span Guevara
         h2.name-section__profesion Frontend Developer
@@ -14,7 +14,7 @@ section.resume#profile
           | Lover of the challenges with a culture focused on teamwork, with excellent integration to them with leadership skills and adaptability to various work environments.
           | With more interest there is the code and programming.
 
-      .address-section
+      section.address-section
         ul
           li.address-section__item
             span.text-color Phone no:
@@ -638,35 +638,32 @@ section.resume#profile
             i.fas.fa-image(aria-hidden='true').interest-box__icon
             p.interest-box__title Take a Walk          
       
-      //- .eduction-right
-      //-   .row.no-margin
-      //-     .col-md-12.heading-skills.no-padding
-      //-       h3 EDUCATION
-      //-       .ex-box
-      //-         h2 2010-2012
-      //-         h4 PROJECT MANAGER
-      //-         p
-      //-           | Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
-      //-     .col-md-12.heading-skills.no-padding
-      //-       .ex-box
-      //-         h2 2010-2012
-      //-         h4 PROJECT MANAGER
-      //-         p
-      //-           | Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
-      //- .address-qr-right
-      //-   .row.no-margin
-      //-     .col-md-5.no-padding
-      //-       .qr-box
-      //-         img(src='../img/qr.png')
-      //-     .col-md-7.no-padding
-      //-       .address-right-box
-      //-         ul
-      //-           li
-      //-             i.fa.fa-phone-square(aria-hidden='true')
-      //-             p 45534546565
-      //-           li
-      //-             i.fa.fa-envelope-o(aria-hidden='true')
-      //-             p Info@gmail.com
-      //-           li
-      //-             i.fa.fa-map-marker(aria-hidden='true')
-      //-             p Dermis India J-219, Saket New Delhi -110017.
+      section.education
+        h1.education__title EDUCATION
+        .education-box
+          h2.education-box__date 2017 - Present
+          h3.education-box__title E-learning
+          p.education-box__text
+            | Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
+        .education-box
+          h2.education-box__date 2014-2017
+          h3.education-box__title High School
+          p.education-box__text
+            | Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print
+
+
+      section.address-qr
+        .qr-box
+          img.qr-box__image(src='../img/qr.png')
+          a(href="#").qr-box__link Dowload CV
+        .address-box
+          ul
+            li.address-box__item
+              i.fa.fa-phone-square(aria-hidden='true')
+              p.address-box__text (+52) 56 1282 0700
+            li.address-box__item
+              i.fa.fa-envelope-o(aria-hidden='true')
+              p.address-box__text luisfernandoguevara95@gmail.com
+            li.address-box__item
+              i.fa.fa-map-marker(aria-hidden='true')
+              p.address-box__text G.A.M Mexico City
