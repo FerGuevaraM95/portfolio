@@ -160,7 +160,7 @@ jQuery(document).ready(function () {
 	/*	Cats Filter
 	/* ---------------------------------------------------------------------- */
 
-  var $catsfilter = $('.cats-filter');
+  var $catsfilter = $('#portfolio-filter');
 
   // Copy categories to item classes
   $catsfilter.find('a').click(function () {

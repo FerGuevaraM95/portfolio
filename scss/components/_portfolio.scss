@@ -1,0 +1,80 @@
+//====================================
+// Portfolio
+//====================================
+.portfolio {
+  padding: 31px;
+}
+.portfolio-filter {
+  border-bottom: 1px solid $Light-Gray;
+  overflow: hidden;
+  padding: 15px 0 0;
+  &__item {
+    display: inline-block;
+    margin-bottom: 28px;
+  }
+  &__link {
+    margin-right: 7px;
+    color: $White;
+    background-color: $Gray-700;
+    padding: 10px 10px;
+    font-size: 13px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    &:hover {
+      text-decoration: none;
+    }
+    &.current {
+      background-color: $Salmon;
+    }
+  }
+}
+.extra-text {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: $Gray-300 !important;
+}
+
+.portfolio-list {
+  // width: 820px;
+  grid-gap: 3rem;
+  // overflow: hidden;
+  &__item {
+    // float: left;
+    margin: 0 30px;
+    // margin: 0 12px;
+    text-align: center;
+    background-color: $Background-Color;
+    border-bottom: 1px solid $Border-Color;
+    height: 185px;
+    margin-bottom: 30px;
+    // width: 180px;
+    &:hover {
+      border-bottom: 1px solid $Salmon;
+      height: 185px;
+      & .title {
+        color: $Salmon;
+      }
+    }
+  }
+  &__image {
+    background-color: $White;
+    height: 120px;
+    width: 185px;
+  }
+  &__title {
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 400;
+    color: $Title-Color;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  &__categorie {
+    font-size: 11px;
+    line-height: 25px;
+    color: $Gray-900;
+  }
+}

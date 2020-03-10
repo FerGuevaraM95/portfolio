@@ -1,3 +1,6 @@
+//====================================
+// General
+//====================================
 body {
   font-family: sans-serif;
   background: url("../../img/bg-body.jpg");
@@ -43,93 +46,6 @@ h1 h2, h3, h4, h5, h6 {
 
 
 
-
-
-#portfolio {
-  padding: 31px;
-}
-
-#portfolio-list {
-  width: 820px;
-  overflow: hidden;
-
-  li {
-    float: left;
-    margin-right: 25px;
-    text-align: center;
-    background-color: $Background-Color;
-    border-bottom: 1px solid $Border-Color;
-    height: 185px;
-    margin-bottom: 30px;
-    width: 180px;
-
-    &:hover {
-      border-bottom: 1px solid $Salmon;
-      height: 185px;
-    }
-  }
-
-  img {
-    background-color: $White;
-    height: 120px;
-    width: 185px;
-  }
-
-  li {
-    &:hover .title {
-      color: $Salmon;
-    }
-
-    .title {
-      font-size: 14px;
-      margin-top: 15px;
-      font-weight: 400;
-      color: $Title-Color;
-      text-transform: uppercase;
-      font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    .categorie {
-      font-size: 11px;
-      line-height: 25px;
-      color: $Gray-900;
-    }
-  }
-}
-
-.cats-filter {
-  border-bottom: 1px solid $Light-Gray;
-  overflow: hidden;
-  padding: 15px 0;
-
-  li a {
-    float: left;
-    margin-right: 7px;
-    color: $White;
-    background-color: $Gray-700;
-    padding: 10px 10px;
-    margin-bottom: 5px;
-    font-size: 13px;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
-    border-radius: 50px;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    &.current {
-      background-color: $Salmon;
-    }
-  }
-}
-
-.extra-text {
-  font-family: 'Roboto Condensed', sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  color: $Gray-300 !important;
-}
 
 #contact {
   overflow: hidden;

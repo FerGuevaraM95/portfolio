@@ -1,56 +1,62 @@
-section#portfolio
-  ul#portfolio-filter.cats-filter
-    li
-      a.current.trnasition(href='#' data-filter='*') All
-    li
-      a.trnasition(href='#' data-filter='.webdesign') Web Design
-    li
-      a.trnasition(href='#' data-filter='.photography') Photography
-    li
-      a.trnasition(href='#' data-filter='.illustration') Illustration
-    li
-      a.trnasition(href='#' data-filter='.print') Print
-    li
-      a.trnasition(href='#' data-filter='.animation') Animation
-  .extra-text Some of the projects i am proud with
-  ul#portfolio-list
-    li.ilustration.print
-      a.folio(href='#')
-      img(src='../img/work3.jpg' alt='')
-      p Hello Goodbye
-      span.categorie Print / Illustration
-    li.webdesign
-      a.folio(href='#')
-      img(src='../img/3-thumb.jpg' alt='')
-      p Snow Time
-      span.categorie Web Design
-    li.photography
-      a.folio(href='#')
-      img(src='../img/2-thumb.jpg' alt='')
-      p Help us
-      span.categorie Photography
-    li.animation.print
-      a.folio(href='#')
-      img(src='../img/4-thumb.jpg' alt='')
-      p Sunshine
-      span.categorie Print / Animation
-    li.animation.print
-      a.folio(href='#')
-      img(src='../img/5-thumb.jpg' alt='')
-      p Come together
-      span.categorie Animation
-    li.webdesign.print
-      a.folio(href='#')
-      img(src='../img/6-thumb.jpg' alt='')
-      p The yellow
-      span.categorie Web Design / Print
-    li.photography
-      a.folio(href='#')
-      img(src='../img/7-thumb.jpg' alt='')
-      p Black Bird
-      span.categorie Pothography
-    li.illustration
-      a.folio(href='#')
-      img(src='../img/8-thumb.jpg' alt='')
-      p Revolution
-      span.categorie Illustration
+section#profile.portfolio
+  ul#portfolio-filter.portfolio-filter
+    li.portfolio-filter__item
+      a.portfolio-filter__link.current.transition(href='#' data-filter='*') All
+    li.portfolio-filter__item
+      a.portfolio-filter__link.transition(href='#' data-filter='.css') Css
+    li.portfolio-filter__item
+      a.portfolio-filter__link.transition(href='#' data-filter='.js') Vanilla JS
+    li.portfolio-filter__item
+      a.portfolio-filter__link.transition(href='#' data-filter='.react') React
+    li.portfolio-filter__item
+      a.portfolio-filter__link.transition(href='#' data-filter='.react-native') React Native
+    li.portfolio-filter__item
+      a.portfolio-filter__link.transition(href='#' data-filter='.bootstrap') Bootstrap
+    li.portfolio-filter__item
+      a.portfolio-filter__link.transition(href='#' data-filter='.tailwind') Tailwind Css
+    li.portfolio-filter__item
+      a.portfolio-filter__link.transition(href='#' data-filter='.jquery') JQuery  
+
+  p.extra-text Some of the projects i am proud with
+
+  ul#portfolio-list.portfolio-list
+    li.portfolio-list__item.ilustration.react-native
+      a.portfolio-list__link(href='#')
+        img.portfolio-list__image(src='../img/work3.jpg' alt='')
+      p.portfolio-list__title Hello Goodbye
+      span.portfolio-list__categorie.categorie React Native / React
+    li.portfolio-list__item.css
+      a.portfolio-list__link(href='#')
+        img.portfolio-list__image(src='../img/3-thumb.jpg' alt='')
+      p.portfolio-list__title Snow Time
+      span.portfolio-list__categorie.categorie Css
+    li.portfolio-list__item.js
+      a.portfolio-list__link(href='#')
+        img.portfolio-list__image(src='../img/2-thumb.jpg' alt='')
+      p.portfolio-list__title Help us
+      span.portfolio-list__categorie.categorie Vanilla JS
+    li.portfolio-list__item.bootstrap.react-native
+      a.portfolio-list__link(href='#')
+        img.portfolio-list__image(src='../img/4-thumb.jpg' alt='')
+      p.portfolio-list__title Sunshine
+      span.portfolio-list__categorie.categorie React Native / Bootstrap
+    li.portfolio-list__item.tailwind.jquery
+      a.portfolio-list__link(href='#')
+        img.portfolio-list__image(src='../img/5-thumb.jpg' alt='')
+      p.portfolio-list__title Come together
+      span.portfolio-list__categorie.categorie Tailwind Css / JQuery
+    li.portfolio-list__item.css.react-native
+      a.portfolio-list__link(href='#')
+        img.portfolio-list__image(src='../img/6-thumb.jpg' alt='')
+      p.portfolio-list__title The yellow
+      span.portfolio-list__categorie.categorie Css / React Native
+    li.portfolio-list__item.js
+      a.portfolio-list__link(href='#')
+        img.portfolio-list__image(src='../img/7-thumb.jpg' alt='')
+      p.portfolio-list__title Black Bird
+      span.portfolio-list__categorie.categorie Vanilla JS
+    li.portfolio-list__item.react
+      a.portfolio-list__link(href='#')
+        img.portfolio-list__image(src='../img/8-thumb.jpg' alt='')
+      p.portfolio-list__title Revolution
+      span.portfolio-list__categorie.categorie React
