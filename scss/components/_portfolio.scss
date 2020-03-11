@@ -39,8 +39,9 @@
 
 .portfolio-list {
   // width: 820px;
+  display: flex;
   grid-gap: 3rem;
-  // overflow: hidden;
+  overflow: hidden;
   &__item {
     // float: left;
     margin: 0 30px;

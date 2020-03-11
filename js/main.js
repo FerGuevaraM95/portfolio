@@ -1,4 +1,9 @@
-jQuery(document).ready(function () {
+import easytabs from "./easytabs";
+import carouFredSel from "caroufredsel";
+import isotope from "./isotope";
+
+
+$(document).ready(function () {
 
   /* ---------------------------------------------------------------------- */
 	/*	Custom Functions
