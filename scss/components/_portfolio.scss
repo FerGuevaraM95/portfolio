@@ -33,25 +33,23 @@
 .extra-text {
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: 20px 30px;
+  line-height: 20px;
   color: $Gray-300 !important;
 }
 
 .portfolio-list {
-  // width: 820px;
   display: flex;
-  grid-gap: 3rem;
   overflow: hidden;
+  margin-left: 15px;
   &__item {
-    // float: left;
-    margin: 0 30px;
-    // margin: 0 12px;
+    margin: 0 15px;
     text-align: center;
     background-color: $Background-Color;
     border-bottom: 1px solid $Border-Color;
     height: 185px;
+    width: 80%;
     margin-bottom: 30px;
-    // width: 180px;
     &:hover {
       border-bottom: 1px solid $Salmon;
       height: 185px;
@@ -77,5 +75,25 @@
     font-size: 11px;
     line-height: 25px;
     color: $Gray-900;
+  }
+}
+
+@media only screen and (min-width: 492px) {
+  .portfolio-list {
+    &__item {
+      width: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  .portfolio-list {
+    &__item {
+      margin: 0 30px;
+    }
+    &__image {
+      height: 120px;
+      width: 185px;
+    }
   }
 }
