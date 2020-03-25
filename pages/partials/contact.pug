@@ -1,4 +1,4 @@
-section#contact
+section#contact.contact
   #map
     iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120336.90383122452!2d-99.18399778610778!3d19.518922121444437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce00316a29ba95%3A0xf1277698ca624191!2sGustavo%20A.%20Madero%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1579982749725!5m2!1ses-419!2smx' width='300' height='100%' frameborder='0' style='border:0;' allowfullscreen='')
   .contact-info
@@ -21,17 +21,13 @@ section#contact
     .contact-status
       form.contactform(action='')
         .form-group
-          input#name.form-control(type='text')
+          input#name.form-control(type='text' disabled)
           label.form-control-placeholder(for='name')
             | Your Name
         .form-group
-          input#email.form-control(type='text')
+          input#email.form-control(type='text' disabled)
           label.form-control-placeholder(for='email')
             | Your Email
         label(for='message') Your Message
-        textarea(name='message' id='' cols='88' rows='7')
-        input.button.transition(type='submit' name='submit' value='Send your message')
-        br
-        br
-        br
-        br
+        textarea(name='message' id='' cols='88' rows='7' disabled)
+        input.button.disabled.transition(type='button' name='submit' value='Send your message')

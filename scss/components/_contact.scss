@@ -1,0 +1,148 @@
+//====================================
+// Portfolio
+//====================================
+.contact {
+  overflow: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contact-info, .contact-form {
+  float: left;
+  padding: 0 20px;
+}
+
+.contact-info {
+  width: 250px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contact-form {
+  margin: 30px 0;
+  // width: 530px;
+}
+
+.contact-info ul {
+  float: left;
+  border-left: 1px solid $Salmon;
+  padding-left: 18px;
+
+  li {
+    font-size: 13px;
+    line-height: 20px;
+    color: $Gray-700;
+    overflow: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+}
+
+.main-heading {
+  margin-bottom: 35px;
+}
+
+#map {
+  height: 300px;
+  margin-bottom: 25px;
+  width: 100%;
+  border-bottom: 1px solid $Border-Color;
+  border-top: 1px solid $Border-Color;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+form {
+  .input {
+    box-shadow: inset 0 5px 17px -13px $Gray-300;
+    background-color: $Input-Color;
+    border: 1px solid $Border-Input;
+    border-radius: 2px;
+    color: $Gray-700;
+    font-size: 12px;
+    height: 30px;
+    outline: none;
+    padding: 7px 10px;
+    resize: none;
+    width: 97%;
+  }
+
+  textarea {
+    box-shadow: inset 0 5px 17px -13px $Gray-300;
+    background-color: $Input-Color;
+    border: 1px solid $Border-Input;
+    border-radius: 2px;
+    color: $Gray-700;
+    font-size: 12px;
+    height: 30px;
+    outline: none;
+    padding: 7px 10px;
+    resize: none;
+    width: 97%;
+    height: 112px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding-top: 8px;
+  }
+
+  label {
+    display: block;
+    color: $Gray-900;
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: $White;
+  background-clip: padding-box;
+  border: 1px solid $Border-Input;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+  font-size: 13px;
+  color: #333232;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-control {
+  &:focus + .form-control-placeholder, &:valid + .form-control-placeholder {
+    padding: 5px;
+    font-size: 75%;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: $Salmon;
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  .contact-form {
+    width: 530px;
+  }
+}
+

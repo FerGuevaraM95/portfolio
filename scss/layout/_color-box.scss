@@ -22,6 +22,236 @@
   }
 }
 
+
+.bg-warning {
+  background-color: $Salmon !important;
+}
+
+button.setting-icon {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: 2px;
+  background: $Salmon;
+  color: $White;
+  border: 2px solid $White;
+}
+
+/* color scheeme */
+
+button {
+  &#yellow-color {
+    background: $Yellow;
+    border: 2px solid $White;
+  }
+
+  &#red-color {
+    background: $Salmon;
+    border: 2px solid $White;
+  }
+
+  &#blue-color {
+    background: $Blue;
+    border: 2px solid $White;
+  }
+
+  &#green-color {
+    background: $Green;
+    border: 2px solid $White;
+  }
+}
+
+.btn-style {
+  border: 0;
+  width: 30px;
+  height: 30px;
+}
+
+/* yellow color */
+
+#yellow {
+  .name-section h2 span {
+    color: $Yellow;
+  }
+
+  .bg-warning {
+    background-color: $Yellow !important;
+  }
+
+  .sn {
+    border: 5px solid $Yellow;
+  }
+
+  .address-box i.fa {
+    color: $Yellow;
+  }
+
+  .qr-box {
+    background: $Yellow;
+  }
+
+  .ex-box h2, .experience-section h2 {
+    background: $Yellow;
+    color: #383838;
+  }
+
+  .skills {
+    &:after, &:before {
+      background: $Yellow;
+    }
+  }
+
+  .text-color {
+    color: $Yellow;
+  }
+
+  .name-section {
+    h2 span {
+      color: $Yellow;
+    }
+
+    &.bg-color-1 h5 {
+      color: $White;
+      background-color: $Yellow;
+    }
+  }
+}
+
+/* yellow color */
+/* red color */
+
+#red {
+  .name-section h2 span {
+    color: $Salmon;
+  }
+
+  .bg-warning {
+    background-color: $Salmon !important;
+  }
+
+  .sn {
+    border: 5px solid $Salmon;
+  }
+
+  .address-box i.fa {
+    color: $Salmon;
+  }
+
+  .qr-box {
+    background: $Salmon;
+  }
+
+  .ex-box h2 {
+    background: $Salmon;
+    color: #fdf9f9;
+  }
+
+  .experience-section h2 {
+    background: $Salmon;
+    color: #f9f9f9;
+  }
+
+  .text-color {
+    color: $Salmon;
+  }
+
+  .name-section {
+    h2 span {
+      color: $Salmon;
+    }
+
+    &.bg-color-1 h5 {
+      color: $White;
+      background-color: $Salmon;
+    }
+  }
+}
+
+/* red color */
+/* blue $Blue */
+
+#blue {
+  .name-section h2 span {
+    color: $Salmon;
+  }
+
+  .bg-warning {
+    background-color: $Blue !important;
+  }
+
+  .sn {
+    border: 5px solid $Blue;
+  }
+
+  .address-box i.fa {
+    color: $Blue;
+  }
+
+  .qr-box {
+    background: $Blue;
+  }
+
+  .ex-box h2, .experience-section h2 {
+    background: $Blue;
+    color: $White;
+  }
+
+  .text-color {
+    color: $Blue;
+  }
+
+  .name-section {
+    h2 span {
+      color: $Blue;
+    }
+
+    &.bg-color-1 h5 {
+      color: $White;
+      background-color: $Blue;
+    }
+  }
+}
+
+/* Blue color */
+/* $Green $Blue */
+
+#green {
+  .name-section h2 span {
+    color: $Green;
+  }
+
+  .bg-warning {
+    background-color: $Green !important;
+  }
+
+  .sn {
+    border: 5px solid $Green;
+  }
+
+  .address-box i.fa {
+    color: $Green;
+  }
+
+  .qr-box {
+    background: $Green;
+  }
+
+  .ex-box h2, .experience-section h2 {
+    background: $Green;
+    color: $White;
+  }
+
+  .text-color, &.name-section h2 span {
+    color: $Green;
+  }
+
+  .name-section.bg-color-1 h5 {
+    color: $White;
+    background-color: $Green;
+  }
+}
+
+
 @media only screen and (min-width: 1024px) {
   .color-box {
     width: 31px;
