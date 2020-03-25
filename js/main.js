@@ -1,7 +1,5 @@
 import easytabs from "./easytabs";
 import carouFredSel from "caroufredsel";
-import isotope from "./isotope";
-import cellsByRow from 'isotope-cells-by-row'
 
 
 $(document).ready(function () {
@@ -180,31 +178,31 @@ $(document).ready(function () {
 	/* ---------------------------------------------------------------------- */
 
 	
-	// Needed variables
-	var $plist	 	= $('#portfolio-list');
-	var $pfilter 		= $('#portfolio-filter');
+	// // Needed variables
+	// var $plist	 	= $('#portfolio-list');
+	// var $pfilter 		= $('#portfolio-filter');
 		
-	// Run Isotope  
-	$plist.isotope({
-		filter				: '*',
-		layoutMode   		: 'masonry',
-		animationOptions	: {
-		duration			: 750,
-		easing				: 'linear'
-	   }
-	});	
+	// // Run Isotope  
+	// $plist.isotope({
+	// 	filter				: '*',
+	// 	layoutMode   		: 'masonry',
+	// 	animationOptions	: {
+	// 	duration			: 750,
+	// 	easing				: 'linear'
+	//    }
+	// });	
 	
-	// Isotope Filter 
-	$pfilter.find('a').click(function(){
-	  var selector = $(this).attr('data-filter');
-		$plist.isotope({ 
-		filter				: selector,
-		animationOptions	: {
-		duration			: 750,
-		easing				: 'linear',
-		queue				: false,
-	   }
-	  });
-	  return false;
-	});	 
+	// // Isotope Filter 
+	// $pfilter.find('a').click(function(){
+	//   var selector = $(this).attr('data-filter');
+	// 	$plist.isotope({ 
+	// 	filter				: selector,
+	// 	animationOptions	: {
+	// 	duration			: 750,
+	// 	easing				: 'linear',
+	// 	queue				: false,
+	//    }
+	//   });
+	//   return false;
+	// });	 
 });	

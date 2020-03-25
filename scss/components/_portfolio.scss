@@ -39,16 +39,17 @@
 }
 
 .portfolio-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   margin-left: 15px;
   &__item {
-    margin: 0 15px;
     text-align: center;
     background-color: $Background-Color;
     border-bottom: 1px solid $Border-Color;
     height: 185px;
-    width: 80%;
     margin-bottom: 30px;
     &:hover {
       border-bottom: 1px solid $Salmon;
@@ -78,22 +79,14 @@
   }
 }
 
-@media only screen and (min-width: 492px) {
+@media only screen and (min-width: 420px) {
   .portfolio-list {
-    &__item {
-      width: auto;
-    }
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (min-width: 860px) {
   .portfolio-list {
-    &__item {
-      margin: 0 30px;
-    }
-    &__image {
-      height: 120px;
-      width: 185px;
-    }
+    grid-template-columns: repeat(3, 1fr);
   }
 }
