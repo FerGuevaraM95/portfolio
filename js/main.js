@@ -46,7 +46,6 @@ $(document).ready(function () {
 
 
   $(".socials-text").click(function () {
-    console.log('press');
     $(".social-icons").toggleClass("main");
   });
 
