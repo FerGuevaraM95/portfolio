@@ -184,31 +184,34 @@ $(document).ready(function () {
 	/* ---------------------------------------------------------------------- */
 
 	
-	// // Needed variables
-	// var $plist	 	= $('#portfolio-list');
-	// var $pfilter 		= $('#portfolio-filter');
-		
-	// // Run Isotope  
-	// $plist.isotope({
-	// 	filter				: '*',
-	// 	layoutMode   		: 'masonry',
-	// 	animationOptions	: {
-	// 	duration			: 750,
-	// 	easing				: 'linear'
-	//    }
-	// });	
-	
-	// // Isotope Filter 
-	// $pfilter.find('a').click(function(){
-	//   var selector = $(this).attr('data-filter');
-	// 	$plist.isotope({ 
-	// 	filter				: selector,
-	// 	animationOptions	: {
-	// 	duration			: 750,
-	// 	easing				: 'linear',
-	// 	queue				: false,
-	//    }
-	//   });
-	//   return false;
-	// });	 
+	// Needed variables
+	const $plist = document.querySelectorAll('#portfolio-list li');
+  const $pfilter = document.querySelector('#portfolio-filter');
+  let category = "*"
+
+  $pfilter.addEventListener('click', (e) => {
+    if(e.target.classList.contains('portfolio-filter__link')) {
+      category = e.target.dataset.filter;
+    }
+    filterProjects(category);
+  })
+
+
+  function filterProjects(category) {
+    if(category === '*') {
+      for(let item of Array.from($plist)) {
+        item.classList.remove('hide');
+      }
+      return;
+    }
+    const hideProjects = Array.from($plist).filter((project) => !project.classList.contains(category));
+    const showProjects = Array.from($plist).filter((project) => project.classList.contains(category));
+    for(let item of hideProjects) {
+      item.classList.add('hide');
+    }
+    for(let item of showProjects) {
+      item.classList.remove('hide');
+    }
+  }
+  
 });	

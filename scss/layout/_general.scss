@@ -71,6 +71,10 @@ button:focus {
   outline: 0px auto -webkit-focus-ring-color;
 }
 
+.hide {
+  display: none;
+}
+
 @media (min-width: 860px) {
   .container {
     max-width: 860px;
