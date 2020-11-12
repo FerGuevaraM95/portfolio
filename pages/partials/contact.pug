@@ -19,15 +19,11 @@ section#contact.contact
     h3.main-heading
       span Let&acute;s keep in touch
     .contact-status
-      form.contactform(action='')
+      form.contactform(action='https://formspree.io/f/mrgoleay'  method='POST')
         .form-group
-          input#name.form-control(type='text' disabled)
-          label.form-control-placeholder(for='name')
-            | Your Name
-        .form-group
-          input#email.form-control(type='text' disabled)
-          label.form-control-placeholder(for='email')
+          input#email.form-control(type='text' name='_replyto' required)
+          label.form-control-placeholder(for='email' name='message')
             | Your Email
         label(for='message') Your Message
-        textarea(name='message' id='' cols='88' rows='7' disabled)
-        input.button.disabled.transition(type='button' name='submit' value='Send your message')
+        textarea(name='message' id='' cols='88' rows='7' required)
+        input.button.transition(type='submit' value='Send your message')
