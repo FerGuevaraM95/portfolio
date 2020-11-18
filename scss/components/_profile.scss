@@ -11,7 +11,7 @@
     "info";
   padding: 0 1rem;
   background-color: $Salmon;
-  background-image: url("../../img/header-shadow.png");
+  background-image: url("/img/header-shadow.png");
   background-position: center bottom;
   background-repeat: repeat-x;
   overflow: hidden;
@@ -36,7 +36,7 @@
     left: 0;
     width: 192px;
     height: 212px;
-    background: url("../../img/photo-inner.png") no-repeat center center;
+    background: url("/img/photo-inner.png") no-repeat center center;
   }
 }
 
@@ -98,7 +98,7 @@
     left: -14px;
     width: 10px;
     height: 226px;
-    background: url('../../img/personal-info-sep.png') no-repeat left top;
+    background: url('/img/personal-info-sep.png') no-repeat left top;
   }
 
   &__item {

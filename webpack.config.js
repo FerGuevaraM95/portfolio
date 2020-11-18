@@ -14,6 +14,7 @@ module.exports = {
     filename: "js/[name].[chunkhash].bundle.js"
     // publicPath: 'dist/'
   },
+  // devtool: "source-map",
   module: {
     rules: [
       {
@@ -30,11 +31,11 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          // 'style-loader',
+          // "style-loader",
           {
             loader: MiniCssExtractPlugin.loader
           },
-          "css-loader",
+          "css-loader?url=true",
           {
             loader: "postcss-loader",
             options: {
@@ -57,7 +58,8 @@ module.exports = {
             options: {
               name: "[name].[ext]",
               outputPath: "assets/",
-              useRelativePath: true
+              useRelativePath: true,
+              publicPath: "assets/img"
             }
           },
           {
@@ -96,8 +98,8 @@ module.exports = {
     new webpack.ProgressPlugin(),
     new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
+      $: 'jquery',
+      jQuery: 'jquery'
     }),
     new MiniCssExtractPlugin({
       filename: "css/styles.[chunkhash].css",

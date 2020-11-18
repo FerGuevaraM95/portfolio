@@ -32,7 +32,7 @@
     text-decoration: none;
     margin-right: 35px;
     &.active {
-      background: url('../../img/tab-hover.png') no-repeat;
+      background: url('/img/tab-hover.png') no-repeat;
       color: $Salmon;
       & i {
         animation: bounce 2s infinite;
