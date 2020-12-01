@@ -10,8 +10,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist-dev"),
-    filename: "js/[name].[chunkhash].bundle.js"
-    // publicPath: 'dist/'
+    filename: "js/[name].[chunkhash].bundle.js",
+    // publicPath: './'
   },
   devtool: "source-map",
   devServer: {
@@ -60,7 +60,7 @@ module.exports = {
               plugins: () => [autoprefixer]
             }
           },
-          "resolve-url-loader",
+          // "resolve-url-loader",
           "sass-loader"
         ]
       },
@@ -71,8 +71,6 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "assets/",
-              useRelativePath: true
             }
           }
         ]

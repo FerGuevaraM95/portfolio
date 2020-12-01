@@ -11,10 +11,9 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "js/[name].[chunkhash].bundle.js"
-    // publicPath: 'dist/'
+    filename: "[name].[chunkhash].bundle.js",
+    publicPath: './'
   },
-  // devtool: "source-map",
   module: {
     rules: [
       {
@@ -31,11 +30,10 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          // "style-loader",
           {
             loader: MiniCssExtractPlugin.loader
           },
-          "css-loader?url=true",
+          "css-loader",
           {
             loader: "postcss-loader",
             options: {
@@ -46,7 +44,6 @@ module.exports = {
               plugins: () => [autoprefixer]
             }
           },
-          "resolve-url-loader",
           "sass-loader"
         ]
       },
@@ -56,10 +53,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: "[name].[ext]",
-              outputPath: "assets/",
-              useRelativePath: true,
-              publicPath: "assets/img"
+              name: "img/[name].[ext]",
             }
           },
           {
@@ -102,7 +96,7 @@ module.exports = {
       jQuery: 'jquery'
     }),
     new MiniCssExtractPlugin({
-      filename: "css/styles.[chunkhash].css",
+      filename: "styles.[chunkhash].css",
       chunkFilename: "[id].css"
     }),
     new HtmlWebpackPlugin({
