@@ -49,14 +49,15 @@
 } */
 
 .social-icons {
-  display: block;
+  visibility: hidden;
   opacity: 0;
   top: 11px;
   position: absolute;
-  transition: opacity ease 1s, right ease 1s;
+  transition: visibility 0s, opacity 1s ease, right ease 1s;
   z-index: 40;
   right: 5px;
   &.main {
+    visibility: visible;
     opacity: 1;
     top: 11px;
     right: 55px;

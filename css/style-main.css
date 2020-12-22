@@ -22,7 +22,8 @@ i.fa.fa-share-alt-square {
     color: #fff!important;
 }
 ul.socialicons {
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
     top: -1px;
     position: relative;
     transition: all ease 1s;
@@ -30,7 +31,8 @@ ul.socialicons {
     left: -7px;
 }
 ul.socialicons.main {
-    opacity: 1;
+    /* opacity: 1; */
+    display: block;
     top: -1px;
     left: -48px;
 }
