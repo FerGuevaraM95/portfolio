@@ -49,6 +49,13 @@ $(document).ready(function () {
     $(".social-icons").toggleClass("main");
   });
 
+  /* ---------------------------------------------------------------------- */
+	/*	Profile
+	/* ---------------------------------------------------------------------- */
+
+  // Footer
+  var $copyright = $(".copyright")
+  $copyright.text('copyright © ' + new Date().getFullYear() + ' Fernando Guevara')
 
 
   /* ---------------------------------------------------------------------- */
